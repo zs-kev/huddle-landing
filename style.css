@@ -52,7 +52,7 @@ button {
     @media only screen and (min-width: 768px) {
       .logo-container .logo {
         width: 15em;
-        padding-top: 3.5em; } }
+        padding-top: 3em; } }
 
 .main-content {
   width: 80%;
@@ -63,10 +63,10 @@ button {
       width: 90%;
       max-width: 1440px;
       display: grid;
-      grid-template-columns: 60% 1fr;
+      grid-template-columns: 57% 1fr;
       column-gap: 3em; } }
   .main-content .image {
-    width: 100%; }
+    width: 95%; }
   .main-content .text-container {
     text-align: center;
     padding-top: 3.5em; }
@@ -84,12 +84,13 @@ button {
     flex-direction: row-reverse;
     align-items: center;
     width: 90%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+    .flex-container .social {
+      align-self: end; } }
 footer {
   width: 80%;
   text-align: center;
-  margin: 0 auto;
-  padding: 3em 0; }
+  margin: 0 auto; }
   @media only screen and (min-width: 768px) {
     footer {
       width: 90%;
@@ -176,6 +177,7 @@ main {
   @media only screen and (min-width: 768px) {
     main {
       background-image: url(./img/bg-desktop.svg);
-      background-size: cover; } }
+      background-size: cover;
+      height: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
