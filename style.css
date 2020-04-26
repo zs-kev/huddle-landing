@@ -72,9 +72,13 @@ button {
     padding-top: 3.5em; }
     @media only screen and (min-width: 768px) {
       .main-content .text-container {
-        text-align: left; }
+        text-align: left;
+        padding-top: 2.5em; }
         .main-content .text-container h1 {
           font-size: 2.5em; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .main-content .text-container {
+        padding: 0 0 2.5em 0; } }
     .main-content .text-container p {
       padding-top: 1em; }
 
@@ -84,18 +88,21 @@ button {
     flex-direction: row-reverse;
     align-items: center;
     width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 20px 0; }
     .flex-container .social {
       align-self: end; } }
 footer {
   width: 80%;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 3em 0; }
   @media only screen and (min-width: 768px) {
     footer {
       width: 90%;
       max-width: 1440px;
-      text-align: left; } }
+      text-align: left;
+      padding: 0; } }
   footer a {
     color: #c3b8e0;
     text-decoration: none; }
@@ -113,7 +120,8 @@ footer {
   box-shadow: 0px 5px 20px -10px #000; }
 
 button {
-  padding: 0.7rem 4.5rem;
+  padding: 0 7em;
+  height: 3em;
   margin-top: 2em;
   color: #674baf;
   background-color: #fff;
@@ -123,7 +131,8 @@ button {
   overflow: hidden; }
   @media only screen and (min-width: 768px) {
     button {
-      padding: 1em 4.5em;
+      height: 3.5em;
+      padding: 0em 6em;
       font-size: 1em; } }
   button .register-now {
     opacity: 0;
@@ -135,9 +144,16 @@ button {
     width: 100%; }
     @media only screen and (max-width: 768px) {
       button .register-now {
-        top: 10px; } }
+        top: 12px; } }
   button .register {
+    position: absolute;
+    width: 100%;
+    top: 16px;
+    left: 0;
     transition: all 0.3s cubic-bezier(0.94, 0.06, 0.45, 0.95); }
+    @media only screen and (max-width: 768px) {
+      button .register {
+        top: 12px; } }
   button:hover .register-now {
     opacity: 1;
     transform: translate(0, 0); }
@@ -157,7 +173,7 @@ button {
       text-align: right; } }
   .social a {
     color: #fff;
-    border: 1.5px solid #fff;
+    border: 1px solid #fff;
     border-radius: 50%;
     padding: 6px 10px; }
     .social a:first-child {
@@ -178,6 +194,6 @@ main {
     main {
       background-image: url(./img/bg-desktop.svg);
       background-size: cover;
-      height: 100%; } }
+      min-height: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
